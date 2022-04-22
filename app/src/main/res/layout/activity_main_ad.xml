@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#03142E"
+    tools:context=".MainActivityAD">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="24dp"
+        android:layout_height="50dp">
+
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/border_line_icon"
+            android:padding="14dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_menu_ad">
+
+        </ImageView>
+
+        <TextView
+            android:layout_weight="100"
+            android:layout_width="match_parent"
+            android:text="AD BLOKER"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/border_line_icon"
+            android:padding="13dp"
+            android:src="@drawable/ic_settings_ad">
+
+        </ImageView>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_start_ad"
+        android:padding="40dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="35dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/border_line_round_ad"
+                android:padding="15dp"
+                android:src="@drawable/ic_md_refresh_ad"/>
+            <TextView
+                android:layout_weight="100"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/border_line_round_ad"
+                android:padding="15dp"
+                android:src="@drawable/ic_question_ad"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#5537D5"
+                app:cardCornerRadius="50dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Start"
+                    android:textSize="22dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:layout_margin="14dp"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

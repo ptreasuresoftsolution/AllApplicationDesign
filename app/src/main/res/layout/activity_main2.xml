@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/mapimage"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#00FFFFFF"
+        android:orientation="horizontal">
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            app:cardElevation="20dp"
+            android:layout_weight="5"
+            android:layout_marginRight="20dp"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MaterialCardView.Cut">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:text="Near Friends"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:gravity="center|bottom"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:layout_marginTop="-5dp"
+                        android:gravity="center|top"
+                        android:text="Shown your near friend"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="60dp"
+            android:layout_height="65dp"
+            app:cardElevation="20dp"
+            android:layout_marginRight="12dp"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MaterialCardView.Cut_2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_user_profile"
+                    android:padding="7dp"/>
+
+
+
+            </LinearLayout>
+
+
+
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="60dp"
+            android:layout_height="65dp"
+            app:cardElevation="20dp"
+            android:layout_marginRight="24dp"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MaterialCardView.Cut_2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_edit_filter"
+                    android:padding="7dp"/>
+
+
+            </LinearLayout>
+
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        app:cardElevation="20dp"
+        android:layout_marginBottom="-10dp"
+        android:layout_gravity="bottom"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MaterialCardView.Cut_Bottom_nevi">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_home"
+                 android:padding="22dp"
+                android:layout_marginBottom="5dp"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="70dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="5dp"
+                app:cardElevation="20dp"
+                android:backgroundTint="@color/black"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MaterialCardView.Cut_Bottom_nevi">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:padding="9dp"
+                        android:src="@drawable/ic_map"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_account"
+                android:padding="22dp"
+                android:layout_marginBottom="5dp"
+                />
+        </LinearLayout>
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+</FrameLayout>
